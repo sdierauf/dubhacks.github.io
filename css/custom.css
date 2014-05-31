@@ -1,15 +1,14 @@
 @font-face {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Open Sans"), local("OpenSans"), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format("woff")
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(http://themes.googleusercontent.com/static/fonts/ptsans/v6/7YGmE4Ls5b94ct65u07hVQLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
 }
-
 @font-face {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 700;
-    src: local("Open Sans Bold"), local("OpenSans-Bold"), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format("woff")
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/ptsans/v6/0XxGQsSc1g4rdRdjJKZrNL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
 }
 
 /* Start styling the page */
@@ -52,7 +51,7 @@ html, body {
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     color: #4b549e;
     font-size: 16pt
@@ -112,10 +111,11 @@ h2 a:hover {
 }
 
 p.tagline {
-    font-size: 1.3em;
+    font-size: 1em;
     color: #fff;
-    line-height: 1.25em;
-    margin-bottom: 1em
+    margin-bottom: 2em;
+    line-height: normal;
+    text-transform: uppercase;
 }
 
 h1 > i {
@@ -231,8 +231,9 @@ h1 > i {
 
 .logo {
     width: 30%;
-    min-width: 180px;
-    max-width: 400px
+    min-width: 240px;
+    max-width: 400px;
+    margin-bottom: 1em;
 }
 
 /* Styling all other jumbotrons */
