@@ -115,17 +115,52 @@ p.tagline {
     font-size: 1.3em;
     color: #fff;
     line-height: 1.25em;
-    margin-bottom: 2em
+    margin-bottom: 1em
 }
 
 h1 > i {
     margin-right: 20px
 }
 
-small.text {
-    font-size: 0.6em;
-    color: #fff;
-    opacity: 0.5;
+.btn {
+    border: none;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+    line-height: normal;
+    color: #111111;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    -webkit-transition: 0.2s background linear;
+    -moz-transition: 0.2s background linear;
+    transition: 0.2s background linear;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-background-clip: padding;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    -webkit-appearance: none;
+    background: #f6ca14;
+}
+
+.register, .resume {
+    width: 15%;
+    min-width: 150px;
+    max-width: 200px;
+}
+
+.btn:hover {
+    background: #111111;
+    color: #f6ca14;
 }
 
 /***********************************/
@@ -194,11 +229,10 @@ small.text {
     background-size: cover;
 }
 
-h1.top-title {
-    color: #fff;
-    font-weight: 400;
-    font-size: 2.6em;
-    opacity: 0.6
+.logo {
+    width: 30%;
+    min-width: 180px;
+    max-width: 400px
 }
 
 /* Styling all other jumbotrons */
@@ -213,6 +247,7 @@ h1.top-title {
 
 .faq {
     background: #f6ca14;
+    color: #4b549e;
 }
 
 /* iphone landscape and portrait */
@@ -240,10 +275,27 @@ h1.top-title {
     color: #fff
 }
 
-
 .row {
     margin: 0 auto 30px auto;
     padding: 0 auto
+}
+
+.social {
+    padding: 0;
+}
+.social li {
+    margin-right: 10px
+}
+.social a {
+    opacity: 0.6;
+    position: relative;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear
+}
+.social a:hover {
+    opacity: 1
 }
 
 .footer {
