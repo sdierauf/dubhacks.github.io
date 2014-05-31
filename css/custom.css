@@ -47,14 +47,14 @@ html, body {
 }
 
 ::selection {
-    background-color: #439add;
-    color: #000;
+    background-color: #4b549e;
+    color: #fff;
 }
 
 body {
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
-    color: #3366a4;
+    color: #4b549e;
     font-size: 16pt
 }
 
@@ -68,7 +68,7 @@ a {
 }
 
 a:hover {
-    color: #3366a4;
+    color: #4b549e;
     text-decoration: none;
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
@@ -153,6 +153,11 @@ small.text {
     position: relative
 }
 
+.jumbotron h1 {
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
 /* Style the first jumbotron */
 .top {
     text-align: center;
@@ -165,15 +170,28 @@ small.text {
 
 .bg {
     content: "";
+    z-index: -3;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url("http://bio.sacnas.org/uploads/event/University_of_Washington_Campus_Air_View.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.bg-overlay {
+    content: "";
     z-index: -1;
     position: absolute;
     height: 100%;
     width: 100%;
-    background: #319753;
-    -moz-transition: all 0.5s linear;
-    -o-transition: all 0.5s linear;
-    -webkit-transition: all 0.5s linear;
-    transition: all 0.5s linear
+    background: rgba(57, 39, 91, 0.75);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 h1.top-title {
@@ -183,6 +201,19 @@ h1.top-title {
     opacity: 0.6
 }
 
+/* Styling all other jumbotrons */
+
+.faq, .details {
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    float: none;
+    padding: 4em 1em;
+}
+
+.faq {
+    background: #f6ca14;
+}
 
 /* iphone landscape and portrait */
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
@@ -198,22 +229,11 @@ h1.top-title {
     }
 }
 
-
-@-webkit-keyframes arrows {
-    0%, 20%, 50%, 80%, 100% {bottom: 10px;} 
-    40% {bottom: 30px;}
-    60% {bottom: 15px;}
-}
-
 .arrow {
     position: absolute;
     bottom: 10px;
     opacity: 0.6;
     text-align: center;
-    -webkit-animation: arrows 2s infinite;
-    -moz-animation: arrows 2s infinite;
-    -o-animation: arrows 2s infinite;
-    animation: arrows 2s infinite
 }
 
 .arrow a i {
