@@ -128,7 +128,7 @@ h1 > i {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     line-height: normal;
     color: #111111;
     padding: 10px 15px;
@@ -150,9 +150,9 @@ h1 > i {
     background: #f6ca14;
 }
 
-.register, .sponsor {
+.register, .sponsor, .resume {
     width: 15%;
-    min-width: 150px;
+    min-width: 120px;
     max-width: 200px;
 }
 
@@ -229,7 +229,7 @@ h1 > i {
 
 .logo {
     width: 30%;
-    min-width: 240px;
+    min-width: 200px;
     max-width: 400px;
     margin-bottom: 1em;
 }
@@ -253,20 +253,6 @@ h1 > i {
 
 .faq .col-md-4 p {
     color: white;
-}
-
-/* iphone landscape and portrait */
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
-    body {
-        font-size: 13pt;
-    }
-
-    .tagline {
-        font-size: 1em;
-    }
-    .arrow {
-        font-size: 0.5em;
-    }
 }
 
 .arrow {
@@ -308,4 +294,20 @@ h1 > i {
     background: #fff;
     padding: 4em 1em;
     font-weight: 400
+}
+
+/* iphone landscape and portrait */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+    body {
+        font-size: 13pt;
+    }
+
+    .tagline {
+        font-size: 1em;
+    }
+    .arrow {
+        font-size: 0.5em;
+    }
+
+
 }
