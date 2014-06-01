@@ -238,7 +238,9 @@ h1 > i {
 
 /* Styling all other jumbotrons */
 
-.faq, .details {
+.jumbotron > .faq,
+.jumbotron > .details,
+.jumbotron > .sponsor {
     text-align: center;
     vertical-align: middle;
     display: table-cell;
@@ -249,6 +251,10 @@ h1 > i {
 .faq {
     background: #f6ca14;
     color: #4b549e;
+}
+
+.faq .col-md-4 p {
+    color: white;
 }
 
 /* iphone landscape and portrait */
