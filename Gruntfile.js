@@ -45,6 +45,21 @@ module.exports = function(grunt) {
       }
     },
 
+    imagemin: {
+      dist: {
+        options: {
+          optimizationLevel: 7,
+          progressive: true
+        },
+        files: [{
+          expand: true,
+          cwd: 'images/',
+          src: '{,*/}*.{png,jpg,jpeg}',
+          dest: 'dist/images/'
+        }]
+      }
+    },
+
     watch: {
       css: {
         files: [
@@ -57,12 +72,18 @@ module.exports = function(grunt) {
           'js/custom.js'
         ],
         tasks: ['jshint','uglify']
+      },
+      images: {
+        files: [
+          'images/*'
+        ],
+        tasks: ['imagemin']
       }
     }
 
   });
 
-  grunt.registerTask('default', ['jshint', 'uglify', 'cssmin']);
+  grunt.registerTask('default', ['jshint', 'uglify', 'cssmin', 'imagemin']);
   grunt.registerTask('dev', ['watch']);
 
   // ===========================================================================
@@ -75,5 +96,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
 
 };
