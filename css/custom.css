@@ -86,7 +86,6 @@ a img {
 }
 
 h1, h2, h3, h4, h5, h6, h2 a {
-    color: #fff;
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
@@ -188,7 +187,7 @@ h1 > i {
 
 .jumbotron h1 {
     font-weight: 700;
-    margin-bottom: 1em;
+    margin-bottom: .3em;
 }
 
 /* Style the first jumbotron */
@@ -243,7 +242,7 @@ h1 > i {
     vertical-align: middle;
     display: table-cell;
     float: none;
-    padding: 4em 1em;
+    padding: 2em 1em;
 }
 
 .faq {
@@ -289,6 +288,10 @@ h1 > i {
     opacity: 1
 }
 
+.sponsor {
+    color: #4b549e;
+}
+
 .footer {
     text-align: center;
     background: #fff;
@@ -308,6 +311,4 @@ h1 > i {
     .arrow {
         font-size: 0.5em;
     }
-
-
 }
