@@ -149,7 +149,7 @@ h1 > i {
     background: #f6ca14;
 }
 
-.register, .sponsor, .resume {
+.register, .sponsor-btn, .resume {
     width: 15%;
     min-width: 120px;
     max-width: 200px;
@@ -182,22 +182,27 @@ h1 > i {
     width: 100%;
     margin: 0;
     padding: 0;
-    position: relative
+    position: relative;
+    margin-top: 1em;
 }
 
 .jumbotron h1 {
     font-weight: 700;
-    margin-bottom: .3em;
+    margin-bottom: 1em;
 }
 
 /* Style the first jumbotron */
+.jumbotron#top {
+    margin: 0;
+}
+
 .top {
     text-align: center;
     vertical-align: middle;
     display: table-cell;
     float: none;
     padding-left: 1em;
-    padding-right: 1em
+    padding-right: 1em;
 }
 
 .bg {
@@ -235,26 +240,20 @@ h1 > i {
 
 /* Styling all other jumbotrons */
 
-.jumbotron > .faq,
-.jumbotron > .details,
-.jumbotron > .sponsor,
-.jumbotron > .schedule,
-.jumbotron > .judges,
-.jumbotron > .mentors, {
+.details, .schedule, .judges, .mentors, .faq, .sponsor, {
     text-align: center;
     vertical-align: middle;
     display: table-cell;
     float: none;
-    padding: 2em 1em;
 }
 
-.schedule, .mentors, .faq {
+.jumb-padding {
+    padding: 2em 1em;    
+}
+
+.schedule, .mentors, .sponsor {
     background: #4b549e;
     color: #f6ca14;
-}
-
-.faq .col-md-4 p {
-    color: white;
 }
 
 .arrow {

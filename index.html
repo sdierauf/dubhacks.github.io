@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="dist/css/custom.min.css">
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <script src="dist/js/custom.min.js"></script>
+    <script src="js/custom.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -33,11 +33,11 @@
         <div class="top"><img src="dist/images/logo.png" class="logo">
           <p class="tagline">October 17-18 - University of Washington, Seattle</p><a href="">
             <button class="btn register">Register</button></a><a href="#sponsor">
-            <button class="btn sponsor">Sponsor</button></a>
+            <button class="btn sponsor-btn">Sponsor</button></a>
         </div>
       </div>
       <div id="details" class="jumbotron">
-        <div class="details">
+        <div class="details jumb-padding">
           <h1>Details</h1>
           <ul class="list-inline col-md-6 col-md-offset-3 social">
             <li><a href="http://twitter.com/DubHacks" role="button" target="_blank" class="btn-social btn-twitter"><i class="fa fa-twitter fa-2x"></i></a></li>
@@ -51,7 +51,7 @@
         </div>
       </div>
       <div id="schedule" class="jumbotron">
-        <div class="schedule">
+        <div class="schedule jumb-padding">
           <h1>Schedule</h1>
           <div class="row">
             <div class="col-md-4 col-md-offset-4">
@@ -61,7 +61,7 @@
         </div>
       </div>
       <div id="judges" class="jumbotron">
-        <div class="judges">
+        <div class="judges jumb-padding">
           <h1>Judges</h1>
           <div class="row">
             <div class="col-md-4 col-md-offset-4">
@@ -71,7 +71,7 @@
         </div>
       </div>
       <div id="mentors" class="jumbotron">
-        <div class="mentors">
+        <div class="mentors jumb-padding">
           <h1>Mentors</h1>
           <div class="row">
             <div class="col-md-4 col-md-offset-4">
@@ -81,7 +81,7 @@
         </div>
       </div>
       <div id="faq" class="jumbotron">
-        <div class="faq">
+        <div class="faq jumb-padding">
           <h1>FAQ</h1>
           <div class="row">
             <div class="col-md-4"><strong>Who can attend?</strong>
@@ -119,10 +119,14 @@
         </div>
       </div>
       <div id="sponsor" class="jumbotron">
-        <div class="sponsor">
+        <div class="sponsor jumb-padding">
           <h1>Sponsor</h1>
           <h3>The companies that make this possible</h3>
-          <p>If you're interested in sponsoring DubHacks, then take a look at our<a href="/sponsor.pdf"> sponsorship document</a>.</p>
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+              <p>If you're interested in sponsoring DubHacks, then take a look at our<a href="/sponsor.pdf"> sponsorship document</a>.</p>
+            </div>
+          </div>
         </div>
       </div>
       <div class="footer">

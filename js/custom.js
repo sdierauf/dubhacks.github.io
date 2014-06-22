@@ -6,7 +6,7 @@ $(document).ready(function() {
     // set equal height for all jumbotrons
     function heightJumbotrons() {
         for (var i = 0; i < $(".jumbotron").length; i++) {
-            if ($(".jumbotron)").eq(i).height() < $(window).height()) {
+            if ($(".jumbotron").eq(i).height() < $(window).height()) {
                 $(".jumbotron").eq(i).height($(window).height());
             }
         }
@@ -30,7 +30,7 @@ $(document).ready(function() {
     $(window).resize(function () {
         // for a single paged top part
         $(".top").height($(window).height());
-        heightJumbotrons();
+        // heightJumbotrons();
     });
 
 });
