@@ -256,6 +256,10 @@ h1 > i {
     color: #f6ca14;
 }
 
+.sponsor a:hover {
+    color: #fff;
+}
+
 .arrow {
     position: absolute;
     bottom: 10px;
