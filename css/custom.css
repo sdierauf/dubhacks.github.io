@@ -251,13 +251,19 @@ h1 > i {
     padding: 2em 1em;    
 }
 
-.schedule, .mentors, .sponsor {
+.schedule, .mentors, .faq, .footer {
     background: #4b549e;
     color: #f6ca14;
 }
 
 .sponsor a:hover {
     color: #fff;
+}
+
+.sponsor img {
+    display: block;
+    padding: 20px;
+    margin: 0 auto;
 }
 
 .arrow {
@@ -296,7 +302,6 @@ h1 > i {
 
 .footer {
     text-align: center;
-    background: #fff;
     padding: 4em 1em;
     font-weight: 400
 }
