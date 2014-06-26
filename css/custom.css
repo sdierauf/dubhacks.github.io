@@ -266,6 +266,22 @@ h1 > i {
     margin: 0 auto;
 }
 
+.sponsor-logo.plat {
+    width: 45em;
+}
+
+.sponsor-logo.gold {
+    width: 35em;
+}
+
+.sponsor-logo.silver {
+    width: 25em;
+}
+
+.sponsor-logo.mini {
+    width: 15em;
+}
+
 .arrow {
     position: absolute;
     bottom: 10px;
