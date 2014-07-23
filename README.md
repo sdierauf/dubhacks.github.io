@@ -9,12 +9,18 @@ dubhacks.co
 
 Make new branches for new changes, and once you are satisfied, merge them with `master` and push them.
 
-### Building
-
-Commands to run to build and serve the file:
+### Installing
 
 ```sh
+git clone git@github.com:dubhacks/dubhacks.github.io.git
 npm install                # install dependencies
+```
+
+### Continuous Building
+
+Commands to run to build and serve the file (use separate tabs):
+
+```sh
 grunt watch                # run grunt tasks on changes
 jade -w -P index.jade      # process jade on changes
 python -m SimpleHTTPServer # serve the site locally
