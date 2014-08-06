@@ -123,11 +123,11 @@ h1 > i {
 
 h1.blurb {
     font-weight: 600;
-    width: 60%;
+    width: 50%;
     font-size: 2.2em;
-    /* text-align: center; */
     line-height: 1.5;
     margin: 50px auto;
+    min-width: 320px;
 }
 
 .btn {
@@ -190,9 +190,8 @@ h1.blurb {
     display: table;
     width: 100%;
     margin: 0;
-    padding: 0;
     position: relative;
-    margin-top: 1em;
+    border-bottom: 5px solid rgba(51, 51, 51, 0.5);
 }
 
 .jumbotron h1 {
@@ -204,6 +203,7 @@ h1.blurb {
 
 .jumbotron#top {
     margin: 0;
+    padding: 0;
 }
 
 .top {
@@ -211,8 +211,6 @@ h1.blurb {
     vertical-align: middle;
     display: table-cell;
     float: none;
-    padding-left: 1em;
-    padding-right: 1em;
 }
 
 .bg {
@@ -339,8 +337,21 @@ h1.blurb {
     font-weight: 400
 }
 
+ul.why-join-us {
+    list-style-type: none;
+    float: left;
+    width: 50%;
+    text-align: left;
+    font-weight: normal;
+    font-size: 0.8em;
+}
+
+ul.why-join-us > li > .fa {
+    margin-right: 10px;
+}
+
 /* iphone landscape and portrait */
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+@media only screen and (max-width : 568px) {
     body {
         font-size: 13pt;
     }
@@ -350,5 +361,8 @@ h1.blurb {
     }
     .arrow {
         font-size: 0.5em;
+    }
+    h1.blurb {
+        font-size: 1.8em;
     }
 }
