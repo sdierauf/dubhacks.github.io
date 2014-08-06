@@ -59,7 +59,7 @@ body {
 
 a {
     color: #93adc1;
-    text-decoration: none;
+    text-decoration: underline;
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
@@ -125,6 +125,15 @@ h1.blurb {
     font-weight: 600;
     width: 50%;
     font-size: 2.2em;
+    line-height: 1.5;
+    margin: 50px auto;
+    min-width: 320px;
+}
+
+h3.sponsor-blurb {
+    font-weight: 300;
+    width: 60%;
+    font-size: 1em;
     line-height: 1.5;
     margin: 50px auto;
     min-width: 320px;
@@ -271,17 +280,25 @@ h1.blurb {
     z-index: 100;
 }
 
+.faq a:hover {
+    color: #fff;
+}
+
 .jumb-padding {
     padding: 2em 1em;
 }
 
-.schedule, .mentors, .footer {
+.schedule, .mentors, .footer, .footer a {
     background: #4b549e;
     color: #f6ca14;
 }
 
-.sponsor a:hover {
-    color: #fff;
+.footer a {
+    text-decoration: underline;
+}
+
+.footer a:hover {
+    color: #fdea91;
 }
 
 .sponsor img {
@@ -290,20 +307,20 @@ h1.blurb {
     margin: 0 auto;
 }
 
-.sponsor-logo.plat {
-    width: 45em;
-}
-
-.sponsor-logo.gold {
-    width: 35em;
-}
-
-.sponsor-logo.silver {
+.sponsor-logo.platinum {
     width: 25em;
 }
 
-.sponsor-logo.mini {
+.sponsor-logo.gold {
+    width: 20em;
+}
+
+.sponsor-logo.silver, .sponsor-logo.partner {
     width: 15em;
+}
+
+.sponsor-logo.bronze {
+    width: 10em;
 }
 
 .arrow {
