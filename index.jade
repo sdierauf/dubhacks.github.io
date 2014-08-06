@@ -29,17 +29,23 @@ html(lang="en")
       ga('send', 'pageview');
 
   body
+    #fb-root
     .page-wrapper
+      .social
+        .fb-like(data-href="https://www.facebook.com/uwhacks", data-layout="button_count", data-action="like", data-show-faces="false", data-share="true")
+        a.twitter-follow-button(href="https://twitter.com/DubHacks", data-show-count="false") Follow @DubHacks
       .jumbotron#top
         .bg
           .bg-overlay
         .arrow.col-xs-4.col-xs-offset-4
           a(href="#details")
-            i.fa.fa-angle-down.fa-5x
+            i.fa.fa-angle-down.fa-3x
         .top
           img.logo(src="dist/images/logo.png")
           p.tagline
-            | October 17-18 - University of Washington, Seattle
+            | October 17-18
+            br
+            | University of Washington, Seattle
           a(href="http://dubhacks.eventbrite.com/?aff=webbut")
             button.btn.register Register
           //- a(href="")
@@ -50,14 +56,8 @@ html(lang="en")
 
       .jumbotron#details
         .details.jumb-padding
-          h1 Details
-          ul.list-inline.col-md-6.col-md-offset-3.social
-            li
-              a.btn-social.btn-twitter(href="http://twitter.com/DubHacks", role="button", target="_blank")
-                i.fa.fa-twitter.fa-2x
-            li
-              a.btn-social.btn-blog(href="https://www.facebook.com/uwhacks", role="button", target="_blank")
-                i.fa.fa-facebook.fa-2x
+          h1.blurb DubHacks is the first major collegiate hackathon 
+            | in the Pacific North West.
 
           .col-md-6.col-md-offset-3
             h2 DubHacks is the largest hackathon of the Northwest
@@ -145,3 +145,13 @@ html(lang="en")
         a(href="http://startupuw.com/")  Startup UW
         |  and
         a(href="http://iuga.ischool.uw.edu/")  IUGA
+
+        script.
+          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+          (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=209240735781035&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));

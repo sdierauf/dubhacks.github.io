@@ -24,25 +24,28 @@
     </script>
   </head>
   <body>
+    <div id="fb-root"></div>
     <div class="page-wrapper">
+      <div class="social">
+        <div data-href="https://www.facebook.com/uwhacks" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true" class="fb-like"></div><a href="https://twitter.com/DubHacks" data-show-count="false" class="twitter-follow-button">Follow @DubHacks</a>
+      </div>
       <div id="top" class="jumbotron">
         <div class="bg">
           <div class="bg-overlay"></div>
         </div>
-        <div class="arrow col-xs-4 col-xs-offset-4"><a href="#details"><i class="fa fa-angle-down fa-5x"></i></a></div>
+        <div class="arrow col-xs-4 col-xs-offset-4"><a href="#details"><i class="fa fa-angle-down fa-3x"></i></a></div>
         <div class="top"><img src="dist/images/logo.png" class="logo">
-          <p class="tagline">October 17-18 - University of Washington, Seattle</p><a href="http://dubhacks.eventbrite.com/?aff=webbut">
+          <p class="tagline">October 17-18<br>University of Washington, Seattle</p><a href="http://dubhacks.eventbrite.com/?aff=webbut">
             <button class="btn register">Register</button></a><a href="/sponsor.pdf">
             <button class="btn sponsor-btn">Sponsor</button></a>
         </div>
       </div>
       <div id="details" class="jumbotron">
         <div class="details jumb-padding">
-          <h1>Details</h1>
-          <ul class="list-inline col-md-6 col-md-offset-3 social">
-            <li><a href="http://twitter.com/DubHacks" role="button" target="_blank" class="btn-social btn-twitter"><i class="fa fa-twitter fa-2x"></i></a></li>
-            <li><a href="https://www.facebook.com/uwhacks" role="button" target="_blank" class="btn-social btn-blog"><i class="fa fa-facebook fa-2x"></i></a></li>
-          </ul>
+          <h1 class="blurb">
+            DubHacks is the first major collegiate hackathon 
+            in the Pacific North West.
+          </h1>
           <div class="col-md-6 col-md-offset-3">
             <h2>DubHacks is the largest hackathon of the Northwest</h2>
             <h3>For students by students</h3><br>
@@ -101,6 +104,16 @@
       </div>
       <div class="footer">
         <p>DubHacks presented by</p><a href="http://students.washington.edu/uwsudo/">Sudo Soldiers</a> ,<a href="http://startupuw.com/"> Startup UW</a> and<a href="http://iuga.ischool.uw.edu/"> IUGA</a>
+        <script>
+          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+          (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=209240735781035&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+        </script>
       </div>
     </div>
   </body>
