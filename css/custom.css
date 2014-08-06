@@ -201,7 +201,7 @@ h1.blurb {
 
 /* Style the first jumbotron */
 
-.jumbotron#top {
+.jumbotron#top, .jumbotron#faq {
     margin: 0;
     padding: 0;
 }
@@ -255,11 +255,27 @@ h1.blurb {
     float: none;
 }
 
-.jumb-padding {
-    padding: 2em 1em;    
+.jumbotron#faq {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: url("/dist/images/drum.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #ffffff;
 }
 
-.schedule, .mentors, .faq, .footer {
+.faq {
+    z-index: 100;
+}
+
+.jumb-padding {
+    padding: 2em 1em;
+}
+
+.schedule, .mentors, .footer {
     background: #4b549e;
     color: #f6ca14;
 }
