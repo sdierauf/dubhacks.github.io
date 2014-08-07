@@ -325,6 +325,10 @@ h3.sponsor-blurb {
     font-weight: 400
 }
 
+.fa-heart {
+    color: #e74c3c;
+}
+
 ul.why-join-us {
     list-style-type: none;
     float: left;
