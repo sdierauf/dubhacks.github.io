@@ -248,11 +248,11 @@ h3.sponsor-blurb {
     z-index: 100;
 }
 
-.faq a, .sponsor a {
+.blank-bg a {
     color: #3d4791;
 }
 
-.faq a:hover, .sponsor a:hover {
+.blank-bg a:hover {
     color: #4b549e;
 }
 
@@ -299,8 +299,12 @@ h3.sponsor-blurb {
 }
 
 .row {
-    margin: 0 auto 30px auto;
+    margin: 30px auto;
     padding: 0 auto;
+}
+
+.row > strong {
+    font-size: 1.2em;
 }
 
 .social {
