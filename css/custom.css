@@ -168,7 +168,6 @@ h3.sponsor-blurb {
     width: 100%;
     margin: 0;
     position: relative;
-    border-bottom: 5px solid rgba(51, 51, 51, 0.5);
 }
 
 .jumbotron h1 {
@@ -190,26 +189,13 @@ h3.sponsor-blurb {
     float: none;
 }
 
-.bg {
-    content: "";
+#top > .bg {
     z-index: -3;
-    position: absolute;
-    height: 100%;
+    display: block;
     width: 100%;
-    background: url("/dist/images/uw.jpg") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.bg-overlay {
-    content: "";
-    z-index: -1;
-    position: absolute;
     height: 100%;
-    width: 100%;
-    background: rgba(57, 39, 91, 0.75);
+    position: fixed;
+    background: url(/dist/images/bgs/mainbg.svg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -232,20 +218,27 @@ h3.sponsor-blurb {
     float: none;
 }
 
-.jumbotron#details {
+.jumbotron#faq, .footer {
     content: "";
     height: 100%;
     width: 100%;
-    background: url("/dist/images/drum.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    color: #ffffff;
 }
 
 .faq {
     z-index: 100;
+}
+
+.img-bg {
+    color: #ffffff;
+}
+
+.blank-bg {
+    background: #ffffff;
+    color: #4b549e;
 }
 
 .blank-bg a {
@@ -258,11 +251,6 @@ h3.sponsor-blurb {
 
 .jumb-padding {
     padding: 2em 1em;
-}
-
-.footer {
-    background: #4b549e;
-    color: #ffffff;
 }
 
 .sponsor img {
@@ -303,7 +291,7 @@ h3.sponsor-blurb {
     padding: 0 auto;
 }
 
-.row > strong {
+.row strong {
     font-size: 1.2em;
 }
 
