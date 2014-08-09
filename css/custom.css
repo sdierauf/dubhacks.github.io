@@ -50,7 +50,7 @@ body {
 }
 
 a {
-    color: #f6ca14;
+    color: #ffffff;
     text-decoration: underline;
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
@@ -59,7 +59,7 @@ a {
 }
 
 a:hover {
-    color: #fdea91;
+    color: #ffffff;
     text-decoration: none;
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
@@ -242,7 +242,7 @@ h3.sponsor-blurb {
 }
 
 .blank-bg a {
-    color: #3d4791;
+    color: #4b549e;
 }
 
 .blank-bg a:hover {
