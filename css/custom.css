@@ -109,6 +109,7 @@ h3.sponsor-blurb {
 
 .btn {
     border: none;
+    width: 100%;
     display: inline-block;
     text-align: center;
     text-decoration: none;
@@ -144,6 +145,11 @@ h3.sponsor-blurb {
 .btn:hover {
     background: #111111;
     color: #f6ca14;
+}
+
+.buttonLink {
+    margin: 20px;
+    display: inline-block;
 }
 
 /***********************************/
