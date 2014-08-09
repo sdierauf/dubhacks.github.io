@@ -1,7 +1,7 @@
 dubhacks.co
 ===========
 
-![dubhacks.co](https://cloud.githubusercontent.com/assets/744973/3140995/1e99525e-e95a-11e3-827d-36a758a0bf12.png)
+![dubhacks.co](https://cloud.githubusercontent.com/assets/744973/3867142/1b9715c2-1ff2-11e4-8090-384765fd3eb7.png)
 
 ### Development
 
